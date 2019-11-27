@@ -11,9 +11,5 @@ ENV USER ${NB_USER}
 ENV HOME /home/${NB_USER}
 ENV POSTGRES_PASSWORD 123456
 
-RUN adduser --disabled-password \
-    --gecos "Default user" \
-    --uid ${NB_UID} \
-    ${NB_USER}
 WORKDIR ${HOME}
 USER ${USER}
