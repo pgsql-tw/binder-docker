@@ -1,4 +1,4 @@
-FROM postgres:12.1
+FROM postgres:11
 # install the notebook package
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y python3-pip postgresql-server-dev-12
