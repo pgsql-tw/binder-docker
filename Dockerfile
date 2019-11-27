@@ -1,7 +1,7 @@
 FROM postgres:11
 # install the notebook package
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y python3-pip postgresql-server-dev-12
+RUN apt-get install -y python3-pip postgresql-server-dev-11
 RUN pip3 install --no-cache --upgrade pip && \
     pip3 install --no-cache notebook ipython-sql psycopg2
 
